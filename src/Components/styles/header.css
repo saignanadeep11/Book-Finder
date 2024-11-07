@@ -1,0 +1,10 @@
+h1 {
+  margin: 0;
+  display: inline-block;
+  padding: 0 0 20px 20px;
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(to right, rgb(71, 71, 255), rgb(254, 36, 36));
+  background-clip: text;
+  color: transparent;
+}
