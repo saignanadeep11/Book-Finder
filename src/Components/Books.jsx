@@ -23,6 +23,8 @@ function Books({ results }) {
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
+            type="button"
+            className="btn btn-primary"
           >
             Previous
           </button>
@@ -36,6 +38,8 @@ function Books({ results }) {
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))
             }
             disabled={currentPage === totalPages}
+            type="button"
+            className="btn btn-primary"
           >
             Next
           </button>

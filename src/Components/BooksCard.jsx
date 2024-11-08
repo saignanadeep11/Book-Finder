@@ -26,7 +26,7 @@ function BookCard({ book }) {
         </div>
       </div>
 
-      <h2>{title || "Title not available"}</h2>
+      <h4>{title || "Title not available"}</h4>
       <p>
         <strong>Author:</strong> {author_name?.join(", ") || "Unknown author"}
       </p>

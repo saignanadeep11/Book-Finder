@@ -34,7 +34,8 @@
   margin: 10px 0 20px 0;
 }
 
-h2 {
+h4 {
   font-family: Calibri, "Trebuchet MS", sans-serif;
   text-align: justify-left;
+  text-wrap: wrap;
 }
