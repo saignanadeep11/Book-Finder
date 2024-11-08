@@ -1,28 +1,57 @@
-Book Finder
-A React application that allows users to search for books by title or author using the OpenLibrary API. This app provides a user-friendly interface to find book details, display search results efficiently, and handle large datasets smoothly.
+# Book Search App 📚
 
-Features
-Search by Title or Author: Select the search type to find books by title or author name.
-Debounced Search: Reduces unnecessary API requests by waiting until the user stops typing.
-Loading Indicator: Shows a loading animation when fetching data from the API.
-No Results Message: Displays a message if no results are found after typing stops.
-Virtualized List: Uses react-window to display search results efficiently, even with large data sets.
+This is a simple React application that allows users to search for books by title or author using the OpenLibrary API. It features a search bar, debounce to optimize network calls, and an efficient way of rendering results.
 
-Installation
-Clone the Repository:
+## Features
 
-bash
-Copy code
-git clone https://github.com/saignanadeep11/Book-Finder.git
-cd book-finder
+- **Search by Book Title or Author**: Users can switch between searching by book title or author name.
+- **Debounced Search**: Reduces unnecessary API calls by only making requests when the user stops typing.
+- **Efficient Display**: Uses react-window to handle large lists of book data efficiently.
+- **Loading Indicator**: Displays a loading animation while fetching data.
+- **Responsive UI**: Adapts to different screen sizes for an optimal experience.
 
-Install Dependencies:
+## Technologies Used
 
-bash
-Copy code
-npm install
-Run the App:
+- **React** for building the UI
+- **Lodash Debounce** for optimizing search functionality
+- **OpenLibrary API** as the data source
+- **React Window** for efficiently rendering large lists
 
-bash
-Copy code
-npm start
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (version 14 or later)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/saignanadeep11/Book-Finder.git
+
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd book-search-app
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+### API Setup
+
+This app uses the OpenLibrary API, which doesn't require an API key.
+
+### Running the App
+
+Start the development server:
+`bash
+    npm start
+    or
+    `bash
+yarn start
+Open your browser and go to http://localhost:3000
