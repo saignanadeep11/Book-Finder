@@ -1,0 +1,40 @@
+@media (max-width: 1550px) {
+  .book-card-img img {
+    width: 150px;
+    height: 180px;
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  .book-card-img img {
+    width: 140px;
+    height: 160px;
+  }
+}
+@media (max-width: 450px) {
+  .book-card-img img {
+    width: 100px;
+    height: 120px;
+  }
+}
+
+.book-card {
+  margin: 20px;
+  padding: 5px 10px 0 10px;
+  border-radius: 13px;
+  box-shadow: 5px 5px 15px rgba(54, 52, 52, 0.8);
+  p {
+    margin: 5px;
+  }
+}
+.book-card-img {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px 0;
+}
+
+h2 {
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  text-align: justify-left;
+}

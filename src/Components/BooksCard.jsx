@@ -1,5 +1,6 @@
 import React from "react";
-
+import "./styles/booksCard.css";
+import noCover from "./utils/image.png";
 function BookCard({ book }) {
   const {
     title,
@@ -12,10 +13,19 @@ function BookCard({ book }) {
 
   const coverUrl = cover_i
     ? `https://covers.openlibrary.org/b/id/${cover_i}-M.jpg`
-    : "https://via.placeholder.com/150?text=No+Cover";
+    : null;
   return (
     <div className="book-card">
-      <img src={coverUrl} alt={`${title} cover`} loading="lazy" />
+      <div className="book-card-img">
+        <div>
+          {coverUrl ? (
+            <img src={coverUrl} alt={`${title} cover`} loading="lazy" />
+          ) : (
+            <img src={noCover} loading="lazy" />
+          )}
+        </div>
+      </div>
+
       <h2>{title || "Title not available"}</h2>
       <p>
         <strong>Author:</strong> {author_name?.join(", ") || "Unknown author"}

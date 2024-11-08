@@ -1,14 +1,20 @@
 @media (max-width: 1550px) {
   .books-list {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  .books-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 650px) {
   .books-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 450px) {
@@ -24,7 +30,8 @@
   margin-top: 20px;
 }
 .books-list {
-  justify-content: space-between;
+  display: grid;
+  justify-content: space-around;
 }
 button:disabled {
   opacity: 0.5;
